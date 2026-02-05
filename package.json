@@ -1,0 +1,23 @@
+{
+  "name": "augustle",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=frontend\" \"npm run dev --workspace=backend\"",
+    "build": "npm run build --workspace=frontend && npm run build --workspace=backend",
+    "install:all": "npm install"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "csv-parser": "^3.2.0"
+  }
+}
