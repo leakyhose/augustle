@@ -159,7 +159,7 @@ function ModeCard({ id, label, description, icon, titleSpacing, colors, onSelect
 
       <div style={{ width: '64px', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         {icon
-          ? <img src={icon} alt="" style={{ width: '50px', height: '50px', objectFit: 'contain', opacity: 0.7, mixBlendMode: 'multiply', pointerEvents: 'none' }} />
+          ? <img src={icon} alt="" style={{ width: '50px', height: '50px', objectFit: 'contain', opacity: 0.7, mixBlendMode: 'multiply', pointerEvents: 'none', transform: 'scaleX(-1)' }} />
           : <span style={{ display: 'block', width: '1px', height: '40px', background: colors.rule }} />
         }
       </div>
@@ -193,7 +193,7 @@ function ModeCard({ id, label, description, icon, titleSpacing, colors, onSelect
 
       <div style={{ width: '64px', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         {icon
-          ? <img src={icon} alt="" style={{ width: '50px', height: '50px', objectFit: 'contain', opacity: 0.7, mixBlendMode: 'multiply', pointerEvents: 'none', transform: 'scaleX(-1)' }} />
+          ? <img src={icon} alt="" style={{ width: '50px', height: '50px', objectFit: 'contain', opacity: 0.7, mixBlendMode: 'multiply', pointerEvents: 'none' }} />
           : <span style={{ display: 'block', width: '1px', height: '40px', background: colors.rule }} />
         }
       </div>
